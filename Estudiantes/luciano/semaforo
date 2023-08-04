@@ -1,0 +1,21 @@
+import time as tm
+
+estado = "red"
+conta = 0
+
+while conta <= 2:
+    if estado == "red":
+        print(f"El semaforo esta en {estado}...")
+        tm.sleep(3)
+    estado = "yellow"
+
+    if estado == "yellow":
+        print(f"El semaforo esta en {estado}...")
+        tm.sleep(3)
+    estado = "verde"
+
+    if estado == "verde":
+        print(f"El semaforo esta en {estado}...")
+        tm.sleep(3)
+    estado = "rojo"
+    conta=conta+1
